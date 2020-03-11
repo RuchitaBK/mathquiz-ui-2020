@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IBM CLOUD SERVICES</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>User Registration</h2>
+  <form  (ngSubmit)="ValidateForm(f)" #f="ngForm">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" [(ngModel)]="User.userName" placeholder="Enter Username" name="userName" required>
+  </div>
+    
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" [(ngModel)]="User.email" required mail #email="ngModel" placeholder="Enter Email Address" name="email">
+        <span class="help-block" *ngIf="!email.valid && email.touched" class="alert alert-danger">Please Enter the valid Email Id</span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" [(ngModel)]="User.password" required placeholder="Enter Password" name="password">
+      </div>
+
+      
+    <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>
+    
+  </form>
+</div>
+
+
+<br>
+<br>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "mathquiz-ui": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mathquiz-ui"
+    }
+  },
+  "defaultProject": "mathquiz-ui",
+  "cli": {
+    "analytics": "64a170d7-3874-4916-876d-54de42ff89b6"
+  }
 }

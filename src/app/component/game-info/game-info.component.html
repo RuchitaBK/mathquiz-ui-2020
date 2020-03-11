@@ -1,0 +1,23 @@
+<p>game-info works!</p>
+<div class="class-that-handles-size-and-position">
+<div>
+    <!-- <h1>{{messagestring}}</h1>
+    <h4>{{num1}}</h4> --> 
+    <h4>{{arr_names[0]}} * {{arr_names[1]}}</h4>
+</div>
+
+
+    <app-game-rule></app-game-rule>
+</div>
+<div>
+
+    <form>
+        <div class="form-group">
+          <label for="ans">Answer:</label>
+          <input type="name" [(ngModel)]="answer" placeholder="Answer" name="ans" class="form-control" id="ans">
+        </div>
+     
+      
+        <button class="btn btn-success" (click)="muloperation()">Submit</button>
+      </form>
+</div>
